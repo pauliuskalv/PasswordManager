@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0"
+            prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.141"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="UI.Controller.NewEntry">
+   <children>
+      <ChoiceBox layoutX="14.0"
+                 layoutY="14.0"
+                 prefWidth="150.0"
+                 fx:id="choiceBox"
+                 onAction="#choiceChanged"
+      />
+      <VBox layoutX="14.0"
+            layoutY="87.0"
+            prefHeight="255.0"
+            prefWidth="565.0"
+            fx:id="entryPane"
+      />
+      <Button layoutX="503.0"
+              layoutY="349.0"
+              mnemonicParsing="false"
+              prefHeight="35.0"
+              prefWidth="78.0"
+              text="Save"
+              onAction="#handleExitButton"
+      />
+      <Label layoutX="34.0"
+             layoutY="49.0"
+             prefHeight="28.0"
+             prefWidth="110.0"
+             text="Name:"
+      />
+      <TextField layoutX="164.0"
+                 layoutY="50.0"
+                 prefHeight="26.0"
+                 prefWidth="426.0"
+                 fx:id="name"
+      />
+   </children>
+</AnchorPane>

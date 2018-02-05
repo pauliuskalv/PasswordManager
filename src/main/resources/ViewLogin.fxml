@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="325.0"
+            prefWidth="289.0"
+            xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="UI.Controller.ViewLogin"
+>
+   <children>
+      <Button fx:id="showButton"
+              layoutX="117.0"
+              layoutY="189.0"
+              mnemonicParsing="false"
+              text="Show"
+              onAction="#handleShowButton"
+      />
+      <PasswordField fx:id="usernameField"
+                     layoutX="69.0"
+                     layoutY="100.0"
+      />
+      <PasswordField fx:id="passwordField"
+                     layoutX="69.0"
+                     layoutY="137.0"
+      />
+      <TextField fx:id="username"
+                 layoutX="69.0"
+                 layoutY="100.0"
+      />
+      <TextField fx:id="password"
+                 layoutX="69.0"
+                 layoutY="137.0"
+      />
+   </children>
+</AnchorPane>
